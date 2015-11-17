@@ -1,0 +1,28 @@
+#include <stdio.h>
+  
+int main() {
+  
+    int N, a=0, X, b=0, C; //declaração de variaveis
+    scanf("%d",&N);  // armazenando valor na variavel
+    if (1<= N&&N <= 100){ // definindo a regra de valores
+    for (a=0; a<N; a++){  
+    scanf("%d",&X);   // armazenando valor na variavel
+    if (1< X&&X <=10000000){    // definindo a regra de valores   
+    for (C=X-1; C>1; C--){   // analisar se X é divisivel por outros numeros
+    if(X%C==0) 
+    b++;
+    }
+    if (b!=0)
+ 
+    printf("%d nao eh primo\n",X);
+     
+    else
+    printf("%d eh primo\n", X);
+    b=0; // zerar a variavel para repitir o processo
+}
+         
+}   
+}
+  
+    return 0;
+}
